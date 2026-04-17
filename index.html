@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <base target="_top">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บแอป</title>
+    <title>ระบบ SAR - โรงเรียนบ้านหนองหัวหมู</title>
+    <style>
+        /* ตั้งค่าให้หน้าเว็บไม่มีขอบขาวและเต็มจอภาพพอดี */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* ซ่อนแถบเลื่อนของหน้าเว็บหลัก ป้องกัน scrollbar ซ้อนกัน */
+            background-color: #f0f2f5; /* สีพื้นหลังเผื่อโหลดช้า */
+        }
+        
+        /* ตั้งค่า iframe ให้เต็มพื้นที่ */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* เอาเส้นขอบออก */
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbw8t3IuNhT_bPMbQaSr2GXkpNIhGu40UPWqdyCL9Uv9JVkneRk1ILV9o03aX45vYLWErQ/exec" frameborder="0"></iframe>
+
+    <iframe src="https://script.google.com/macros/s/AKfycby7BaSnUl4Hb8qD2Hdty06fSAxoOCxoI2BWbayKNRhrk_TT4GZhIu7rW_LAmOajzSbVRg/exec"></iframe>
+
 </body>
 </html>
